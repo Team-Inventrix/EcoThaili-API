@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="./assets/ecoapi_logo.png" alt="homescreen" width="370" height="auto">
+	<img src="./assets/ecoapi_logo.png" alt="homescreen" width="600" height="auto">
 </p>
 
 <p align="center">
