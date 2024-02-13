@@ -1,0 +1,110 @@
+#Copyright (c) [Year] TEAM INVENTRIX Contributors
+
+#Permission is hereby granted, free of charge, to any person obtaining a 
+#copy of this software and associated documentation files (the "Software"), 
+#to deal in the Software without restriction, including without limitation the rights to use,
+# copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and
+# to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+#The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+#INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+#IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+#WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+name: 🐛 Bug report
+description: Problems and issues with EcoThaili
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "
+        <p align='center'>
+        
+        <img src='https://cdn.discordapp.com/attachments/1200828631543447604/1202283486828822629/2.png?ex=65d61f40&is=65c3aa40&hm=247d55c18e4246a7a4ab002eb1805f9a7a642e3ea420eac5960e6892c12ecd50&' alt='EcoThaili Logo' title='EcoThaili Logo' width='50%' align='center'/>
+        </p>
+        
+        <br>
+        
+        Thank you for taking the time to report the issue!
+
+        We greatly appreciate the community's efforts to improve EcoThaili project.
+        "
+
+  - type: textarea
+    attributes:
+      label: Software version
+      description: What version of tools and framewroks are you using?
+      placeholder: >
+        Please specify the version of tools and frameworks are you using?
+    validations:
+        required: true
+
+  - type: dropdown
+    attributes:
+      label: Affected EcoThaili components
+      description: >
+        Which API components are affected by this bug?
+        Where did the bug occur?
+      multiple: true
+      options:
+        - Backend
+        - Test
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Describe what happened.
+      placeholder: >
+        Please provide the context in which the problem occurred and explain what happened
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: How to reproduce?
+      description: >
+        What should we do to reproduce the problem? If you are not able to provide a reproducible case,
+        please open a [discussion](https://github.com/Team-Inventrix/ecothaili-api/discussions) instead.
+      placeholder: >
+        Please make sure you provide a reproducible step-by-step explanation of how you reproduce the problem
+        as minimally and accurately as possible.
+        To be more specific, you can describe the click path you took during producing issue.
+        Ideally, you can provide additional screenshots or even GIF files. You can include files by
+        dragging and dropping them here.
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What do you think went wrong?
+      placeholder: >
+        Please explain why you think the behavior is incorrect.
+        How do you think our project should have behaved?
+        If available, it is very helpful if you copy and paste the fragment of the logs with the exact error messages. 
+
+  - type: textarea
+    attributes:
+      label: Additional technical information
+      description: Please provide some additional information about your technical setup
+      placeholder: Here you can provide additional information about the technical environment you are using (OS, browser, docker version, StreamPipes version, etc.)
+
+  - type: dropdown
+    attributes:
+      label: Are you willing to submit a PR?
+      description: >
+        This is absolutely not required, but we will be happy to help you write the post especially if
+        you already have a good understanding of how to implement the fix.
+        EcoThaili is a community-driven project and we welcome new contributors.
+        Find us [here](https://github.com/Team-Inventrix/ecothaili-api/discussions/categories/q-a) or contact us on our mailing list (team.inventrix@gmil.com.
+      options:
+        - Yes, I am willing to submit a PR!
+        - No, I don't want to submit a PR.
+
+  - type: markdown
+    attributes:
+      value: ":pray: Thanks a lot for completing our form!"
