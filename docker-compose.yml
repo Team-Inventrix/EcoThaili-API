@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: bash -c "python manage.py migrate && gunicorn ecothaili_api.wsgi:application --bind 0.0.0.0:8000"
+    command: bash -c "python manage.py migrate && gunicorn ecothaili_api.wsgi:application --bind 127.0.0.1:8000"
     volumes:
       - .:/code
     ports:
