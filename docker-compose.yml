@@ -8,5 +8,8 @@ services:
     command: bash -c "python manage.py migrate && gunicorn ecothaili_api.wsgi:application --bind 0.0.0.0:8006"
     volumes:
       - .:/code
+     
+     
+
     ports:
       - "8006:8006"
