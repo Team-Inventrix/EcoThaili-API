@@ -18,6 +18,8 @@ Before you begin, make sure you have the following installed on your system:Buil
 - [Docker](https://docs.docker.com/engine/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
+> [!NOTE]
+> Only after creating virtual environment, step foward to next step. If you have any issue building our project plz send your query/problem in [discussion](https://github.com/Team-Inventrix/ecothaili-api/discussions/categories/q-a)
 
 ### It's time to play 🎲
 
@@ -60,5 +62,11 @@ Before you begin, make sure you have the following installed on your system:Buil
         ```
         > This commans starts containers after rebuilding all images specified.
 
-> [!NOTE]
-> Only after creating virtual environment, step foward to next step. If you have any issue building our project plz send your query/problem in [discussion](https://github.com/Team-Inventrix/ecothaili-api/discussions/categories/q-a)
+   	> if your wanna stop the container, use `Ctrl + C`
+
+4. **For stopping and clearing the containers**
+   - Use the following commands.
+     ```bash
+     docker compose down
+     ```
+     > stop and delete the containers
