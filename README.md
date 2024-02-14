@@ -10,8 +10,6 @@
 
 ### Prerequisites
 
-Before you begin, make sure you have the following installed on your system:Built on Django's robust framework,which offers scalability and customization for tailored e-commerce solutions.
-
 > [!NOTE]
 > Please use LTS version of following tools.
 
@@ -53,7 +51,7 @@ Before you begin, make sure you have the following installed on your system:Buil
         ```bash
         docker compose up --build
         ```
-        > Tis command starts containers with existing images, rebuilding only if necessary.
+        > This command starts containers with existing images, rebuilding only if necessary.
 
         or,
 
