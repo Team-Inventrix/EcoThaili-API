@@ -1,7 +1,13 @@
-from django.urls import path
 
-from . import views
+from django.urls import path, include
+from .views import ProductViewset
+from rest_framework import  routers
+
+
+
+router = routers.DefaultRouter()
+router.register(r'products',ProductViewset,basename='product')
 
 urlpatterns = [
-    path("", views.eco_api, name="eco_api"),
+    path('', include(router.urls)),
 ]
