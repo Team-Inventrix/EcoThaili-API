@@ -51,14 +51,15 @@
         ```bash
         docker compose up --build
         ```
-        > This command starts containers with existing images, rebuilding only if necessary.
+        > This commans starts containers after rebuilding all images specified.
 
         or,
 
         ```bash
         docker compose up
         ```
-        > This commans starts containers after rebuilding all images specified.
+        > This command starts containers with existing images, rebuilding only if necessary.
+
 
    	> if your wanna stop the container, use `Ctrl + C`
 
