@@ -1,5 +1,9 @@
 <p align="center">
+<<<<<<< Updated upstream
 	<img src="./assets/ecoapi_logo.png" alt="homescreen" width="370" height="auto">
+=======
+	<img src="./assets/ecothaili_api.png" alt="homescreen" width="650" height="auto">
+>>>>>>> Stashed changes
 </p>
 
 <p align="center">
