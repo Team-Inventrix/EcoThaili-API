@@ -1,15 +1,19 @@
 
 from django.urls import path, include
-from .views import ProductViewset
+from .views import *
 from rest_framework import  routers
-from django.apps import apps 
-
 
 router = routers.DefaultRouter()
 router.register(r'products',ProductViewset,basename='product')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('i18n/', include('django.conf.urls.i18n')),
-    path('marketplace/', include(apps.get_app_config('oscar').urls[0])),
+    path('register/', UserRegistrationView.as_view(), name='register'),
+    path('login/', UserLoginView.as_view(), name='login'),
+    path('profile/', UserProfileView.as_view(), name='profile'),
+    path('changepassword/', UserChangePasswordView.as_view(), name='changepassword'),
+    path('send-reset-password-email/', SendPasswordResetEmailView.as_view(), name='send-reset-password-email'),
+    path('reset-password/<uid>/<token>/', UserPasswordResetView.as_view(), name='reset-password'),
+    path('subscriber/',SubscriberView.as_view(), name='subscriber'),
+    path('careers/',CareerView.as_view(), name='careers'),
 ]
