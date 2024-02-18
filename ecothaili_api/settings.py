@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-9wwh*-uq_yw)n=4*uiwzuw!!pb%vnlclawa4fx=p1!wxc@hfbh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'ecothaili-api.onrender.com']
 
 
 # Application definition
