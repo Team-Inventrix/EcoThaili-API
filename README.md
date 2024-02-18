@@ -17,7 +17,7 @@
 - [Docker Compose](https://docs.docker.com/compose/)
 
 > [!NOTE]
-> Only after creating virtual environment, step foward to next step. If you have any issue building our project plz send your query/problem in [discussion](https://github.com/Team-Inventrix/ecothaili-api/discussions/categories/q-a)
+> Only after creating virtual environment, step foward to next step. If you have any issue building our project plz send your query/problem in [discussion](https://github.com/Team-Inventrix/EcoThaili-API/discussions/categories/q-a)
 
 ### It's time to play 🎲
 
@@ -28,9 +28,9 @@
 
    - Run the following command:
      ```bash
-     git clone https://github.com/Team-Inventrix/ecothaili-api.git
+     git clone https://github.com/Team-Inventrix/EcoThaili-API.git
      ```
-   Here `https://github.com/Team-Inventrix/ecothaili-api.git` is the URL of the GitHub repository from where we will be cloning the project to our local machine.
+   Here `https://github.com/Team-Inventrix/EcoThaili-API.git` is the URL of the GitHub repository from where we will be cloning the project to our local machine.
 
 1. **Virtual Env. setup**:
     - For [Linux users](https://virtualenv.pypa.io/en/latest/user_guide.html), go through this guide to setup virtual env. in your local machine.
@@ -39,7 +39,7 @@
 2. **Install Project Dependencies**:
    - After the cloning is completed! you will get a folder and you have to navigate into that project directory:
      ```bash
-     cd ecothaili-api
+     cd EcoThaili-API
      ```
    - Run the following command to install project dependencies specified in `requirements.txt`:
      ```bash
