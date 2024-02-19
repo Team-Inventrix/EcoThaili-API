@@ -77,5 +77,6 @@
 further, if you want to access the docs as json format, you can use following link: 
 
 - [API docs as json data](http://127.0.0.1:8004/docs/?format=openapi)
-
-<div style="text-align:center;">© 2024 EcoThaili. All Rights Reserved.</div>
+<p align="center">
+	© 2024 EcoThaili. All Rights Reserved.
+</p>
