@@ -18,14 +18,31 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
-from django.apps import apps
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+from api.models import BothHttpAndHttpsSchemaGenerator
 
+schema_view = get_schema_view(
+    openapi.Info(
+        title="EcoThaili API",
+        default_version='v1.0.0',
+        description="🚀 Empowering seamless e-commerce experiences with Django's robust backend infrastructure.",
+        terms_of_service="https://ecothaili.vercel.app/terms",
+        contact=openapi.Contact(email="team.inventrix@gmail.com"),
+        license=openapi.License(name="© 2024 EcoThaili. All Rights Reserved."),
+    ),
+    public=True,
+    generator_class=BothHttpAndHttpsSchemaGenerator,
+    permission_classes=(permissions.AllowAny,),
+)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include("api.urls")),
     path('api-auth/', include('rest_framework.urls')),
     path('i18n/', include('django.conf.urls.i18n')),
-]
+    path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='EcoThaili-API-UI'),
+    ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
