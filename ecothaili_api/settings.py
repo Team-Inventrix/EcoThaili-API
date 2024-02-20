@@ -44,17 +44,11 @@ INSTALLED_APPS = [
     'api',
     'corsheaders',
     'rest_framework_simplejwt',
-    'drf_yasg',
+    'drf_spectacular',
+ 
 ]
 
 
-SWAGGER_SETTINGS = {
-    'SECURITY_DEFINITIONS': {
-        'Basic': {
-            'type': 'basic'
-        }
-    }
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -159,9 +153,24 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+    ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',  
 }
 
+SPECTACULAR_SETTINGS = {
+    "TITLE": "EcoThaili API",
+    "DESCRIPTION": "🚀 Empowering seamless e-commerce experiences with Django's robust backend infrastructure.",  # Description of your API
+    "VERSION": "1.0.0",  # Version of your API
+    "DEFAULT_VERSION": "v1.0.0",  # Default version of your API
+    "TERMS_OF_SERVICE": "https://ecothaili.vercel.app/terms",  # Terms of Service URL
+    "CONTACT": {
+        "name": "EcoThaili Team",  # Contact name
+        "email": "team.inventrix@gmail.com",  # Contact email
+    },
+    "LICENSE": {  # Information about your API's license
+        "name": "© 2024 EcoThaili. All Rights Reserved.",
+    },
+}
 
 MEDIA_URL = '/media/'  # URL for serving media files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Absolute filesystem path to the directory that will hold user-uploaded files
@@ -201,3 +210,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
+
+
+

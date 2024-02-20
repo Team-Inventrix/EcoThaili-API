@@ -1,7 +1,7 @@
 from django.db import models
 import uuid
 from django.contrib.auth.models import BaseUserManager,AbstractBaseUser
-from drf_yasg.generators import OpenAPISchemaGenerator
+
 
 #  Custom User Manager
 class UserManager(BaseUserManager):
@@ -101,8 +101,3 @@ class Careers(models.Model):
     cover_letter = models.TextField()
     cv = models.FileField(upload_to="cv") 
 
-class BothHttpAndHttpsSchemaGenerator(OpenAPISchemaGenerator):
-    def get_schema(self, request=None, public=False):
-        schema = super().get_schema(request, public)
-        schema.schemes = ["http", "https"]
-        return schema
